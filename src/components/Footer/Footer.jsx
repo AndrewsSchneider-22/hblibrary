@@ -87,11 +87,12 @@ const Footer = () => {
         </div>
         <div>
           <div className="text-center py-10 border-t-2 border-gray-300/50">
-            @copyright 2024 All rights reserved <br /> <b>Designed by &#8734; INFITECH ||
+            @copyright 2024 All rights reserved 
+            {/* <br /> <b>Designed by INFITECH ||
                <a href="whatsapp://send?phone=+233553319320"> WhatsApp Us</a> || 
                <a href="mailto:infinitybillionaire386@gmail.com"> &#128231; us</a>
                
-               </b>
+               </b> */}
           </div>
         </div>
       </section>

@@ -51,6 +51,7 @@ const booksData = [
     title: "Rich Dad Poor Dad",
     rating: 4.7,
     author: "Kodwo Kwakye",
+    url: "https://www.docdroid.net/Incp3Kq/rich-dad-poor-dad-pdf",
   },
   {
     id: 7,
@@ -82,8 +83,8 @@ const Books = () => {
           <div>
             <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 place-items-center gap-5">
               {/* Card */}
-              {booksData.map(({ id, img, title, rating, author }) => (
-                <div key={id} className="div space-y-3">
+              {booksData.map(({ id, img, title, rating, author, url }) => (
+                <a href={url} target="_blank" key={id} className="div space-y-3">
                   <img
                     src={img}
                     alt=""
@@ -97,7 +98,7 @@ const Books = () => {
                       <span>{rating}</span>
                     </div>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
             <div className="flex justify-center">
